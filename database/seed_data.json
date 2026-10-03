@@ -1,0 +1,325 @@
+{
+  "trades": [
+    {
+      "id": "electrical",
+      "title": "Domestic & Commercial Electrician",
+      "ssc_name": "Power Sector Skill Council (PSSC)",
+      "description": "Installation, troubleshooting, safety isolation, distribution boards, household & commercial wiring.",
+      "icon_name": "Zap",
+      "active_candidates_count": 142
+    },
+    {
+      "id": "tailoring",
+      "title": "Apparel & Garment Tailor",
+      "ssc_name": "Apparel Made-ups & Home Furnishing SSC (AMHSSC)",
+      "description": "Pattern drafting, fabric cutting, industrial stitching, quality finishing, machine maintenance.",
+      "icon_name": "Scissors",
+      "active_candidates_count": 98
+    },
+    {
+      "id": "plumbing",
+      "title": "Plumbing & Piping Technician",
+      "ssc_name": "Indian Plumbing Skills Council (IPSC)",
+      "description": "Pipe jointing, pressure testing, fixture installation, pump maintenance, drainage layout.",
+      "icon_name": "Wrench",
+      "active_candidates_count": 76
+    },
+    {
+      "id": "healthcare",
+      "title": "General Duty Healthcare Assistant",
+      "ssc_name": "Healthcare Sector Skill Council (HSSC)",
+      "description": "Patient care, vital sign monitoring, basic hygiene, infection control, first aid assistance.",
+      "icon_name": "HeartPulse",
+      "active_candidates_count": 54
+    }
+  ],
+  "sample_candidates": [
+    {
+      "id": "SC-1042",
+      "full_name": "Rajesh Kumar Sharma",
+      "trade_id": "electrical",
+      "trade_title": "Domestic & Commercial Electrician",
+      "years_experience": 6.0,
+      "location": "Jaipur, Rajasthan",
+      "preferred_language": "hi",
+      "preliminary_readiness_score": 78,
+      "overall_status": "ready_for_review",
+      "transcript": {
+        "audio_url": "/media/audio/sc-1042-intake.mp3",
+        "audio_duration_seconds": 45,
+        "raw_transcript": "Main pichle chhe saal se local electrician ka kaam kar raha hoon. Gharelu wiring, switchboard fitting, miniature circuit breaker (MCB) installation aur distribution box assembly achhi tarah janta hoon. Multimeter se continuity test karta hoon. Lekin 3-phase commercial panel fault detection mein abhi aur practice chahiye.",
+        "edited_transcript": "Main pichle 6 saal se residential electrical technician ka kaam kar raha hoon. Switchboard installation, MCB panel wiring, socket loop test aur multimeter continuity verification regular karta hoon. Safety ke liye rubber gloves aur line tester use karta hoon.",
+        "extracted_skills": [
+          {
+            "id": "SKILL-ELE-01",
+            "title": "Residential Wiring & Distribution",
+            "category": "technical",
+            "confidence": 0.94,
+            "source_span": "gharelu wiring, switchboard fitting"
+          },
+          {
+            "id": "SKILL-ELE-02",
+            "title": "MCB & Fuse Circuit Protection",
+            "category": "technical",
+            "confidence": 0.91,
+            "source_span": "miniature circuit breaker (MCB) installation"
+          },
+          {
+            "id": "SKILL-ELE-03",
+            "title": "Multimeter Continuity & Test Measurement",
+            "category": "tools",
+            "confidence": 0.88,
+            "source_span": "multimeter se continuity test"
+          },
+          {
+            "id": "SKILL-ELE-04",
+            "title": "Electrical Safety & Personal Isolation",
+            "category": "safety",
+            "confidence": 0.85,
+            "source_span": "rubber gloves aur line tester"
+          }
+        ]
+      },
+      "competencies": [
+        {
+          "id": "ELE-N1001",
+          "code": "ELE/N1001",
+          "nsqf_level": 4,
+          "title": "Install & Wire Distribution Boards and Switchgear",
+          "preliminary_signal": "supported",
+          "confidence_score": 0.92,
+          "ai_rationale": "Mapped from voice transcript ('MCB panel wiring, socket loop test') and confirmed in practical video checkpoint #2.",
+          "source_evidence_refs": ["audio_transcript_v1", "video_evidence_01"],
+          "performance_criteria": [
+            "Mount distribution box securely on wall",
+            "Wire MCB with correct amperage rating",
+            "Verify earth bonding continuity"
+          ]
+        },
+        {
+          "id": "ELE-N1002",
+          "code": "ELE/N1002",
+          "nsqf_level": 4,
+          "title": "Conduct Electrical Safety Isolation & PPE Protocol",
+          "preliminary_signal": "supported",
+          "confidence_score": 0.89,
+          "ai_rationale": "Voice intake references rubber gloves & tester. Practical video confirms main switch isolation before wire stripping.",
+          "source_evidence_refs": ["audio_transcript_v1", "video_evidence_01"],
+          "performance_criteria": [
+            "Switch off main isolation breaker before touching panel",
+            "Use insulated tools rated for voltage",
+            "Verify zero voltage with tester before proceeding"
+          ]
+        },
+        {
+          "id": "ELE-N1003",
+          "code": "ELE/N1003",
+          "nsqf_level": 4,
+          "title": "Diagnose & Repair Low Voltage Wiring Faults",
+          "preliminary_signal": "needs_evidence",
+          "confidence_score": 0.62,
+          "ai_rationale": "Candidate mentioned 3-phase fault diagnosis needs more practice. Multimeter continuity verified, but complex earth-leakage scenario requires practical verification.",
+          "source_evidence_refs": ["situational_quiz_q3"],
+          "performance_criteria": [
+            "Identify short circuits using resistance measurement",
+            "Locate earth ground leakage currents",
+            "Replace damaged insulation safely"
+          ]
+        }
+      ],
+      "video_evidence": {
+        "video_url": "/media/video/sc-1042-practical.mp4",
+        "thumbnail_url": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80",
+        "duration_seconds": 120,
+        "technical_labeling": "Basic Video Analysis",
+        "procedure_checkpoints": [
+          { "step_name": "Voltage Isolation", "timestamp_secs": 12, "detected": true, "confidence": 0.95, "observation_note": "Main breaker switched off prior to panel cover removal." },
+          { "step_name": "Wire Stripping & Terminal Screwing", "timestamp_secs": 45, "detected": true, "confidence": 0.91, "observation_note": "Stripped 10mm copper cable without damaging strands." },
+          { "step_name": "Earth Continuity Check", "timestamp_secs": 88, "detected": true, "confidence": 0.86, "observation_note": "Multimeter probe attached to earthing point." }
+        ],
+        "safety_indicators": [
+          { "metric": "Insulated Gloves Worn", "passed": true, "confidence": 0.94, "details": "1000V rated gloves detected during live panel check" },
+          { "metric": "Zero-Voltage Tester Used", "passed": true, "confidence": 0.92, "details": "Neon tester applied to incoming phase terminal" },
+          { "metric": "Safety Glasses Worn", "passed": false, "confidence": 0.70, "details": "Eye protection not worn during terminal tightening" }
+        ],
+        "assessor_review_flags": [
+          { "flag_type": "UNCERTAIN_ISOLATION_CHECK", "timestamp_secs": 88, "reason": "Camera angle partially obscured multimeter LCD reading.", "action_recommended": "Assessor to verify earth leakage test procedure with candidate." }
+        ]
+      },
+      "situational_assessment": {
+        "total_scenarios": 4,
+        "completed_scenarios": 4,
+        "score_percentage": 75,
+        "adaptive_path": [
+          {
+            "question_id": "SCEN-ELE-01",
+            "scenario_title": "Unexpected Spark at Switchboard",
+            "selected_option_id": "OPT-B",
+            "is_correct": true,
+            "competency_impacted": "ELE-N1002",
+            "adaptive_trigger": "Evaluated safety reaction speed"
+          },
+          {
+            "question_id": "SCEN-ELE-02",
+            "scenario_title": "Earth Leakage Trip Identification",
+            "selected_option_id": "OPT-C",
+            "is_correct": false,
+            "competency_impacted": "ELE-N1003",
+            "adaptive_trigger": "Triggered targeted bridge module recommendation"
+          }
+        ]
+      },
+      "bridge_pathway": [
+        {
+          "id": "MOD-ELE-01",
+          "title": "3-Phase Commercial Fault Diagnostics & RCCB Testing",
+          "gap_addressed": "Earth Leakage & 3-Phase Troubleshooting (ELE-N1003)",
+          "objective": "Master digital insulation testing and 3-phase neutral fault tracing",
+          "duration_hours": 8,
+          "suggested_activity": "Simulated fault panel diagnostic exercise using clamp meter",
+          "reassessment_evidence_type": "video_practical",
+          "status": "recommended"
+        }
+      ],
+      "assessor_notes": "Candidate displays strong practical wiring skills and reliable safety habits. Recommended for RPL certification upon quick clarification of earth leakage test procedure.",
+      "audit_events": [
+        { "timestamp": "2026-10-01T09:30:00Z", "actor": "Rajesh Kumar (Candidate)", "action": "Candidate Onboarded & Language Selected (Hindi)", "object": "SC-1042" },
+        { "timestamp": "2026-10-01T09:35:12Z", "actor": "AI Service (FastAPI)", "action": "Multilingual Voice Intake Processed & Skills Extracted", "object": "Transcript-01" },
+        { "timestamp": "2026-10-01T09:42:00Z", "actor": "AI Service (FastAPI)", "action": "NSQF Competency Matrix Generated (Preliminary Readiness: 78%)", "object": "CompetencyMap-01" },
+        { "timestamp": "2026-10-01T10:15:30Z", "actor": "Rajesh Kumar (Candidate)", "action": "Practical Wiring Video Evidence Uploaded", "object": "Video-01" },
+        { "timestamp": "2026-10-01T10:18:45Z", "actor": "AI Service (FastAPI)", "action": "Basic Video Analysis Indicators & Safety Checkpoints Generated", "object": "VideoAnalysis-01" },
+        { "timestamp": "2026-10-01T10:30:00Z", "actor": "Rajesh Kumar (Candidate)", "action": "Adaptive Situational Check Completed (Score: 75%)", "object": "Diagnostic-01" }
+      ]
+    },
+    {
+      "id": "SC-1098",
+      "full_name": "Anita Devi",
+      "trade_id": "tailoring",
+      "trade_title": "Apparel & Garment Tailor",
+      "years_experience": 4.5,
+      "location": "Lucknow, Uttar Pradesh",
+      "preferred_language": "hi",
+      "preliminary_readiness_score": 82,
+      "overall_status": "ready_for_review",
+      "transcript": {
+        "audio_url": "/media/audio/sc-1098-intake.mp3",
+        "audio_duration_seconds": 38,
+        "raw_transcript": "Main pichle chaar saal se boutique ka kapda silti hoon. Measurement lena, pattern cutting, blouse aur suit ki interlocking aur zipper stitching bohot safai se karti hoon. Industrial motor machine aur hand needlework dono chala leti hoon.",
+        "edited_transcript": "Main 4.5 saal se custom apparel tailoring karti hoon. Garment pattern drafting, body measurement chart, zipper attachment aur overlock machine maintenance achhi tarah janta hoon.",
+        "extracted_skills": [
+          { "id": "SKILL-TAI-01", "title": "Garment Measurement & Pattern Drafting", "category": "technical", "confidence": 0.95, "source_span": "pattern drafting, measurement chart" },
+          { "id": "SKILL-TAI-02", "title": "Industrial Overlock & Machine Operation", "category": "tools", "confidence": 0.92, "source_span": "industrial motor machine, overlock" },
+          { "id": "SKILL-TAI-03", "title": "Zipper Attachment & Seam Finishing", "category": "technical", "confidence": 0.89, "source_span": "zipper attachment, interlocking" }
+        ]
+      },
+      "competencies": [
+        {
+          "id": "AMH-N0101",
+          "code": "AMH/N0101",
+          "nsqf_level": 4,
+          "title": "Draft & Cut Patterns for Ladies Garments",
+          "preliminary_signal": "supported",
+          "confidence_score": 0.94,
+          "ai_rationale": "Voice intake details body measurement and pattern drafting. Confirmed with video cutting evidence.",
+          "source_evidence_refs": ["audio_transcript_sc1098", "video_cutting"],
+          "performance_criteria": ["Take precise anatomical measurements", "Draft pattern paper with seam allowance", "Cut fabric with shears without fraying"]
+        }
+      ],
+      "video_evidence": {
+        "video_url": "/media/video/sc-1098-practical.mp4",
+        "thumbnail_url": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=600&q=80",
+        "duration_seconds": 95,
+        "technical_labeling": "Basic Video Analysis",
+        "procedure_checkpoints": [
+          { "step_name": "Pattern Alignment on Grainline", "timestamp_secs": 15, "detected": true, "confidence": 0.92, "observation_note": "Fabric grain aligned correctly before shear cutting." }
+        ],
+        "safety_indicators": [
+          { "metric": "Finger Guard on Sewing Machine", "passed": true, "confidence": 0.96, "details": "Safety needle guard observed on motor machine" }
+        ],
+        "assessor_review_flags": []
+      },
+      "situational_assessment": {
+        "total_scenarios": 3,
+        "completed_scenarios": 3,
+        "score_percentage": 88,
+        "adaptive_path": []
+      },
+      "bridge_pathway": [],
+      "assessor_notes": "Candidate demonstrates high accuracy in garment construction. Clear candidate for RPL Level 4 certification.",
+      "audit_events": [
+        { "timestamp": "2026-10-02T11:00:00Z", "actor": "Anita Devi (Candidate)", "action": "Candidate Onboarded & Voice Intake Completed", "object": "SC-1098" }
+      ]
+    },
+    {
+      "id": "SC-1131",
+      "full_name": "Muthu Velu",
+      "trade_id": "plumbing",
+      "trade_title": "Plumbing & Piping Technician",
+      "years_experience": 5.0,
+      "location": "Chennai, Tamil Nadu",
+      "preferred_language": "ta",
+      "preliminary_readiness_score": 71,
+      "overall_status": "action_required",
+      "transcript": {
+        "audio_url": "/media/audio/sc-1131-intake.mp3",
+        "audio_duration_seconds": 40,
+        "raw_transcript": "Naan 5 varushama plumbing velai seiyaren. CPVC, PVC pipe jointing, solvent cement application, bathroom mixer fitting ellam nalla theriyum. Leakage testing hydro pump vechu seiyalaam.",
+        "edited_transcript": "5 years experience in domestic plumbing, CPVC pipe solvent welding, overhead tank piping and hydraulic pressure testing.",
+        "extracted_skills": [
+          { "id": "SKILL-PLU-01", "title": "CPVC & PVC Pipe Solvent Jointing", "category": "technical", "confidence": 0.93, "source_span": "CPVC, PVC pipe jointing, solvent cement" },
+          { "id": "SKILL-PLU-02", "title": "Hydraulic Pressure Leak Testing", "category": "technical", "confidence": 0.87, "source_span": "leakage testing hydro pump" }
+        ]
+      },
+      "competencies": [
+        {
+          "id": "PSC-N0102",
+          "code": "PSC/N0102",
+          "nsqf_level": 3,
+          "title": "Perform Pipe Jointing & Water Tightness Testing",
+          "preliminary_signal": "supported",
+          "confidence_score": 0.88,
+          "ai_rationale": "Voice transcript and practical test video confirm proper solvent application.",
+          "source_evidence_refs": ["audio_transcript_sc1131"],
+          "performance_criteria": ["Clean pipe end with primer", "Apply solvent cement uniformly", "Maintain pressure holding time"]
+        }
+      ],
+      "video_evidence": {
+        "video_url": "/media/video/sc-1131-practical.mp4",
+        "thumbnail_url": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=600&q=80",
+        "duration_seconds": 110,
+        "technical_labeling": "Basic Video Analysis",
+        "procedure_checkpoints": [
+          { "step_name": "Pipe Deburring", "timestamp_secs": 18, "detected": true, "confidence": 0.89, "observation_note": "Pipe burrs removed before solvent application." }
+        ],
+        "safety_indicators": [
+          { "metric": "Eye Goggles During Pipe Cutting", "passed": false, "confidence": 0.82, "details": "Candidate cut PVC pipe without eye shield." }
+        ],
+        "assessor_review_flags": [
+          { "flag_type": "SAFETY_PPE_MISSING", "timestamp_secs": 14, "reason": "No eye protection during mechanical pipe cutting.", "action_recommended": "Assessor to enforce safety protocol review." }
+        ]
+      },
+      "situational_assessment": {
+        "total_scenarios": 3,
+        "completed_scenarios": 3,
+        "score_percentage": 66,
+        "adaptive_path": []
+      },
+      "bridge_pathway": [
+        {
+          "id": "MOD-PLU-01",
+          "title": "Occupational Safety & Eye Protection in Plumbing Operations",
+          "gap_addressed": "Personal Protective Equipment Protocol (PSC-N0102)",
+          "objective": "Understand safety standards when using power cutters and chemical solvents",
+          "duration_hours": 4,
+          "suggested_activity": "Safety checklist review and short video demonstration",
+          "reassessment_evidence_type": "situational",
+          "status": "recommended"
+        }
+      ],
+      "assessor_notes": "Technical piping skills are sound. Additional safety evidence requested by assessor.",
+      "audit_events": [
+        { "timestamp": "2026-10-03T08:15:00Z", "actor": "Muthu Velu (Candidate)", "action": "Candidate Onboarded & Voice Intake Completed (Tamil)", "object": "SC-1131" }
+      ]
+    }
+  ]
+}
