@@ -107,8 +107,3 @@ npm run dev
 
 ---
 
-## 📊 Sample Demo Candidates
-
-- **SC-1042 — Rajesh Kumar Sharma** (Domestic & Commercial Electrician, 6 Years Exp)
-- **SC-1098 — Anita Devi** (Apparel & Garment Tailor, 4.5 Years Exp)
-- **SC-1131 — Muthu Velu** (Plumbing & Piping Technician, 5 Years Exp)
